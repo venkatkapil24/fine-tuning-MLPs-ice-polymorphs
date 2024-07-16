@@ -12,7 +12,7 @@ Repository containing data and code for finetuned models for ice polymorphs
 ### From scratch training
 
 ```bash
-python ~/source/mace/scripts/run_train.py \
+python ${MACE_ROOT}/mace/scripts/run_train.py \
     --name="ice_MACE_model" \
     --model="ScaleShiftMACE" \
     --hidden_irreps="128x0e + 128x1o + 128x2e" \
@@ -53,7 +53,8 @@ python ~/source/mace/scripts/run_train.py \
 
 ### Fine-tuning from MACE-MP-0
 
-```python ${MACE_ROOT}/mace/scripts/run_train.py \
+```bash 
+python ${MACE_ROOT}/mace/scripts/run_train.py \
     --name="ice_MACE_model" \
     --foundation_model="large" \
     --default_dtype='float32' \
