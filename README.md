@@ -1,15 +1,17 @@
-# Fine tuned MLPs for ice polymorphs
-Repository containing data and code for finetuned models for ice polymorphs
+# Fine-tuned MLPs for ice polymorphs
+Repository containing data and code for fine-tuned models for ice polymorphs
 
 ## Contents
 
 | **Directory** | **Description**                                                         |
 |---------------|-------------------------------------------------------------------------|
 | dft_data      | Contains DFT total energy, force, and stress data for four ice polymorphs |
+| models      | Contains MACE fine-tuned models for four ice polymorphs. The first number in the naming convention indicates the number of structures used to train the model. |
+
 
 ## Training scripts
 
-### From scratch training
+### From-scratch training
 
 ```bash
 python ${MACE_ROOT}/mace/scripts/run_train.py \
